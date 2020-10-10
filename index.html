@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script src="brainfuck.min.js"></script>
+    <script src="index.min.js"></script>
+    <title>brainf*ck editor</title>
+</head>
+<body>
+    <header>
+        <a href="https://esolangs.org/wiki/Brainfuck">
+            <img class="icon" src="./icon.png" />
+        </a>
+        <p id="title">brainf*ck editor <span name="version" class="optional">ver 1.0.0</span></p>
+        <div id="author">
+            <p><i class="fab fa-youtube"></i> <a href="https://youtube.com/">弓凪</a></p>
+            <p><i class="fab fa-twitter"></i> <a href="https://twitter.com/bow_calm">@bow_calm</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/bowcalm">bowcalm</a></p>
+        </div>
+    </header>
+    <div id="container">
+        <div id="sidemenu">
+            <div style="height: 32px;"></div>
+
+            <p class="io-label">入力 / Input</p>
+            <div class="sidemenu-container">
+                <textarea id="input-field"></textarea>
+            </div>
+
+            <div style="height: 32px;"></div>
+
+            <p class="io-label">出力 / Output <span class="optional">(readonly)</span></p>
+            <div class="sidemenu-container">
+                <textarea readonly id="output-field"></textarea>
+            </div>
+
+            <div style="height: 32px;"></div>
+
+            <p class="io-label">ログ / Log <span class="optional">(readonly)</span></p>
+            <div class="sidemenu-container">
+                <textarea readonly id="log-field"></textarea>
+            </div>
+
+            <div style="height: 32px;"></div>
+
+            <div class="sidemenu-container">
+                <input id="exec-button" type="button" value="実行 / Execute" onclick="exec()" />
+            </div>
+
+            <div style="height: 64px;"></div>
+        </div>
+        <div id="editor"></div>
+    </div>
+</body>
+</html>
