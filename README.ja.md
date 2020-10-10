@@ -1,4 +1,4 @@
-# brainfuck editor
+# [brainfuck-editor](https://bowcalm.github.io/brainfuck-editor/)
 
 [English version is here.](./README.md)
 
@@ -12,7 +12,7 @@ brainfuckをブラウザ上でハイライト付きで編集できる、とて�
   - [microsoft/monaco-editor - github](https://github.com/microsoft/monaco-editor)
   - 参考: [How to run the Monaco editor from a CDN like cdnjs? - stackoverflow](https://stackoverflow.com/questions/63179813/how-to-run-the-monaco-editor-from-a-cdn-like-cdnjs)
 - brainfuck.js
-  - 管理主の自作
+  - 管理者の自作
 
 ## 未着手の課題
 
